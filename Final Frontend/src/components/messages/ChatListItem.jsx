@@ -1,7 +1,7 @@
 export default function ChatListItem({ chat, active, onClick }) {
   const avatar = chat.otherUser?.avatar
     ? chat.otherUser.avatar.startsWith("/uploads")
-      ? `http://localhost:8080${chat.otherUser.avatar}`
+      ? `https://frontend-nkg1.onrender.com${chat.otherUser.avatar}`
       : chat.otherUser.avatar
     : "/profile.png";
 

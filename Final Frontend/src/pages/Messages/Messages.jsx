@@ -1,5 +1,3 @@
-
-
 import { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import api from "../../services/api";
@@ -217,7 +215,7 @@ export default function Messages() {
                       src={
                         activeChat.otherUser.avatar
                           ? activeChat.otherUser.avatar.startsWith("/uploads")
-                            ? `http://localhost:8080${activeChat.otherUser.avatar}`
+                            ? `https://frontend-nkg1.onrender.com${activeChat.otherUser.avatar}`
                             : activeChat.otherUser.avatar
                           : "/profile.png"
                       }

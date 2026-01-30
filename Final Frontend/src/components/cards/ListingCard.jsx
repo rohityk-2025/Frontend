@@ -19,7 +19,7 @@ export default function ListingCard({ item }) {
 
   const imageSrc = item.image
     ? item.image.startsWith("/uploads")
-      ? `http://localhost:8080${item.image}`
+      ? `https://frontend-nkg1.onrender.com${item.image}`
       : item.image
     : "/no-image.png";
 

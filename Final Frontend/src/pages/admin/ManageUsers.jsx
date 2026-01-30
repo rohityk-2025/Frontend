@@ -312,7 +312,7 @@ export default function ManageUsers() {
                       src={
                         user.avatar
                           ? user.avatar.startsWith("/uploads")
-                            ? `http://localhost:8080${user.avatar}`
+                            ? `https://frontend-nkg1.onrender.com${user.avatar}`
                             : user.avatar
                           : "/profile.png"
                       }

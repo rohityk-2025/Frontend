@@ -48,7 +48,9 @@ export default function ProductDetail() {
   const images =
     listing.images && listing.images.length > 0
       ? listing.images.map((img) =>
-          img.startsWith("/uploads") ? `http://localhost:8080${img}` : img,
+          img.startsWith("/uploads")
+            ? `https://frontend-nkg1.onrender.com${img}`
+            : img,
         )
       : ["/no-image.png"];
 

@@ -57,7 +57,7 @@ export default function SellerProfile() {
 
     const imageSrc = rawImage
       ? rawImage.startsWith("/uploads")
-        ? `http://localhost:8080${rawImage}`
+        ? `https://frontend-nkg1.onrender.com${rawImage}`
         : rawImage
       : "no-image.png";
 
@@ -89,7 +89,7 @@ export default function SellerProfile() {
             src={
               seller.avatar
                 ? seller.avatar.startsWith("/uploads")
-                  ? `http://localhost:8080${seller.avatar}`
+                  ? `https://frontend-nkg1.onrender.com${seller.avatar}`
                   : seller.avatar
                 : "/profile.png"
             }
