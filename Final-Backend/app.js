@@ -1,6 +1,3 @@
-
-
-
 const express = require("express");
 const cors = require("cors");
 const morgan = require("morgan");
@@ -13,7 +10,7 @@ const app = express();
 // Allow React frontend
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173", "https://recirclemart.netlify.app"],
     credentials: true,
   }),
 );
