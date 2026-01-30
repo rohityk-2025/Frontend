@@ -1,0 +1,143 @@
+.sell-form-wrapper {
+  max-width: 750px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.sell-form-wrapper h2 {
+  margin: 25px 0 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #002f34;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* PRICE */
+.price-group {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+}
+
+.price-group span {
+  padding: 10px 14px;
+  background: #eee;
+  /* border: 1px solid #ccc; */
+  border-right: none;
+  font-size: 16px;
+}
+
+.price-group input {
+  flex: 1;
+  border: none;
+}
+
+/* PHOTO GRID */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.photo-slot {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: 1.5px dashed #bfcfd0;
+  border-radius: 4px;
+  background: #fafafa;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-photo {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plus {
+  font-size: 32px;
+  color: #002f34;
+  font-weight: 600;
+}
+
+/* IMAGE PREVIEW */
+.photo-slot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* REMOVE BUTTON */
+.remove-btn {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* PHONE */
+.phone-group {
+  display: flex;
+}
+
+.phone-group span {
+  padding: 10px 14px;
+  background: #eee;
+  border: 1px solid #ccc;
+  border-right: none;
+}
+
+.phone-group input {
+  flex: 1;
+  border-left: none;
+}
+
+/* SUBMIT */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #002f34;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 30px;
+  cursor: pointer;
+}

@@ -1,0 +1,41 @@
+/**
+ * Footer.css
+ * Styles only for Footer component
+ */
+
+footer {
+  margin-top: 40px;
+  background: white;
+  border-top: 1px solid #e0e0e0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0;
+  background: #ffffff;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #002f34;
+}
+
+.footer-column li {
+  list-style: none;
+  margin: 6px 0;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.footer-bottom-blue {
+  text-align: center;
+  padding: 12px;
+  background: #002f34;
+  color: white;
+  font-size: 14px;
+  margin-top: 10px;
+}

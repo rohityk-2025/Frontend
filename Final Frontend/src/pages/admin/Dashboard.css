@@ -1,0 +1,103 @@
+.dashboard-root {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  padding: 20px;
+}
+
+.dashboard-root h3 {
+  grid-column: span 2;
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* ================= STATS BLOCKS ================= */
+
+.stats-grid {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.stat-card {
+  padding: 22px;
+  border-radius: 16px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.stat-card h4 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+.stat-card p {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* Gradient colors */
+.stat-card.purple {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+}
+
+.stat-card.green {
+  background: linear-gradient(135deg, #22c55e, #4ade80);
+}
+
+.stat-card.orange {
+  background: linear-gradient(135deg, #f59e0b, #fbbf24);
+}
+
+.stat-card.blue {
+  background: linear-gradient(135deg, #06b6d4, #3b82f6);
+}
+
+/* ================= RANGE BAR ================= */
+
+.range-bar {
+  grid-column: span 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.range-bar span {
+  font-size: 14px;
+  color: #444;
+}
+
+.range-bar select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* ================= CHART BOX ================= */
+
+.chart-box {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.chart-box h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.chart-box.full {
+  grid-column: span 2;
+}

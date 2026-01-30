@@ -1,0 +1,261 @@
+/* Page wrapper */
+.product-page {
+  background: #f2f3f5;
+  min-height: 100vh;
+  padding-bottom: 40px;
+  color: #111;
+}
+
+/* Top image banner */
+.image-section {
+  width: 100%;
+  height: 350px;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Main layout */
+.product-container {
+  max-width: 1200px;
+  margin: -50px auto 0;
+  display: flex;
+  gap: 25px;
+  padding: 20px;
+}
+
+/* Panels */
+.left-panel {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Cards */
+.detail-card,
+.price-card,
+.seller-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+/* TITLE */
+.product-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #111; /* PURE BLACK */
+  letter-spacing: 0.2px;
+}
+
+/* Small tag under title */
+.fuel-tag {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #666; /* SOFT GREY */
+}
+
+/* Section headings */
+.detail-card h3 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+/* Overview grid */
+.overview-grid {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.overview-grid div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #444; /* DARK GREY */
+  font-size: 14px;
+}
+
+.overview-grid i {
+  color: #555;
+  font-size: 16px;
+}
+
+/* Description text */
+.detail-card p {
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: #444; /* READING GREY */
+}
+
+/* PRICE */
+.price {
+  font-size: 30px;
+  font-weight: 800;
+  color: #111; /* STRONG BLACK */
+  margin-bottom: 18px;
+  letter-spacing: 0.3px;
+}
+
+/* Offer button */
+.offer-btn {
+  width: 100%;
+  padding: 13px;
+  background: #3737a1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.offer-btn:hover {
+  background: #333;
+}
+
+/* Seller section */
+.seller-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.seller-info i {
+  font-size: 42px;
+  color: #444;
+}
+
+.seller-name {
+  font-weight: 600;
+  color: #111;
+}
+
+.seller-meta {
+  font-size: 13px;
+  color: #777;
+}
+
+/* Chat button */
+.chat-btn {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #111;
+  background: white;
+  color: #111;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.chat-btn:hover {
+  background: #f4f4f4;
+}
+
+.image-section {
+  position: relative;
+}
+
+/* ---------------------- */
+
+/* IMAGE SECTION FIX */
+
+.image-section {
+  position: relative;
+  width: 100%;
+  height: 400px; /* reserve space for image */
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px; /* pushes content down */
+  overflow: hidden;
+}
+
+.image-section img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain; /* keeps full image visible */
+}
+
+/* ARROWS */
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: white;
+  font-size: 22px;
+  padding: 10px 14px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.left-arrow {
+  left: 15px;
+}
+
+.right-arrow {
+  right: 15px;
+}
+
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+/* =========================
+   STICKY CLOSE (X) BUTTON
+   ========================= */
+
+.close-btn {
+  position: fixed; /* fixed to screen */
+  top: 90px;
+  left: 50px;
+
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+  border: none;
+
+  background: rgba(180, 180, 180, 0.55); /* grey transparent */
+  color: white;
+
+  font-size: 20px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.2s ease;
+  z-index: 9999; /* always on top */
+}
+
+.close-btn:hover {
+  background: rgba(120, 120, 120, 0.75); /* darker on hover */
+  transform: scale(1.12); /* slightly bigger */
+}

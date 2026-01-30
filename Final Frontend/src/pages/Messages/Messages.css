@@ -1,0 +1,313 @@
+/* ================= ROOT LAYOUT ================= */
+
+.chat-root {
+  width: 100%;
+  height: calc(100vh - 80px);
+  display: flex;
+  background: #eef3ff;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+/* ================= SIDEBAR ================= */
+
+.chat-sidebar {
+  width: 280px;
+  background: white;
+  border-radius: 14px;
+  overflow-y: auto;
+  border: 1px solid #e0e0e0;
+}
+
+/* ================= MAIN CHAT ================= */
+
+.chat-main {
+  flex: 1;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+}
+
+/* ================= HEADER ================= */
+
+.chat-top {
+  height: 56px;
+  background: #2563eb;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.chat-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.chat-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+.chat-username {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* ================= THREE DOT MENU ================= */
+
+.chat-menu {
+  position: relative;
+}
+
+.chat-menu button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* POPUP MENU BOX */
+
+.chat-menu-box {
+  position: absolute;
+  right: 0;
+  top: 42px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  min-width: 260px; /* wide */
+  z-index: 200;
+  border: 1px solid #e5e7eb;
+}
+
+/* MENU BUTTONS GENERAL */
+
+.chat-menu-box button {
+  width: 100%;
+  padding: 14px 20px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #111111; /* force dark text */
+}
+
+.chat-menu-box i {
+  font-size: 16px;
+  color: #111111;
+}
+
+/* DELETE BUTTON */
+
+.delete-btn {
+  background: #fee2e2 !important;
+  color: #b91c1c !important;
+}
+
+.delete-btn i {
+  color: #b91c1c !important;
+}
+
+.delete-btn:hover {
+  background: #fecaca !important;
+}
+
+/* CANCEL BUTTON */
+
+.cancel-btn {
+  background: #f3f4f6 !important;
+  color: #374151 !important;
+  border-top: 1px solid #e5e7eb;
+}
+
+.cancel-btn i {
+  color: #374151 !important;
+}
+
+.cancel-btn:hover {
+  background: #e5e7eb !important;
+}
+
+/* ================= CHAT BODY ================= */
+
+.chat-body {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  background: #f5f8ff;
+}
+
+/* ================= CHAT BUBBLES ================= */
+
+.chat-bubble {
+  max-width: 60%;
+  padding: 12px 16px;
+  border-radius: 18px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  position: relative;
+}
+
+/* MY MESSAGE */
+
+.chat-bubble.me {
+  background: #2563eb;
+  color: white;
+  margin-left: auto;
+  border-bottom-right-radius: 6px;
+}
+
+/* OTHER USER */
+
+.chat-bubble.seller {
+  background: white;
+  border: 1px solid #ddd;
+  margin-right: auto;
+  border-bottom-left-radius: 6px;
+}
+
+/* TIME */
+
+.chat-bubble .time {
+  font-size: 11px;
+  color: #999;
+  margin-top: 6px;
+  display: block;
+}
+
+/* ================= INPUT AREA ================= */
+
+.chat-bottom {
+  padding: 14px 16px;
+  display: flex;
+  gap: 10px;
+  border-top: 1px solid #eee;
+  background: white;
+}
+
+/* EXTRA ROUNDED INPUT */
+
+.chat-input {
+  flex: 1;
+  padding: 14px 20px;
+  border-radius: 999px; /* super round */
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 14px;
+  background: #f9fafb;
+}
+
+.chat-input:focus {
+  border-color: #2563eb;
+  background: white;
+}
+
+/* SEND BUTTON */
+
+.send-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.send-btn:hover {
+  background: #1d4ed8;
+}
+
+/* ================= SIDEBAR CHAT ITEMS ================= */
+
+.chat-list-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.2s;
+}
+
+.chat-list-item:hover {
+  background: #f0f5ff;
+}
+
+.chat-list-item.active {
+  background: #e0e9ff;
+}
+
+/* AVATAR */
+
+.chat-list-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+
+/* TEXT */
+
+.chat-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-name {
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0;
+  color: #111;
+}
+
+.chat-last {
+  font-size: 13px;
+  color: gray;
+  margin-top: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .chat-root {
+    flex-direction: column;
+  }
+
+  .chat-sidebar {
+    width: 100%;
+    height: 220px;
+    margin-bottom: 10px;
+  }
+
+  .chat-main {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,36 @@
+.sell-wrapper {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.sell-title {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.sell-box {
+  border: 1px solid #ddd;
+  padding: 30px;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

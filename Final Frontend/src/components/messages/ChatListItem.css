@@ -1,0 +1,9 @@
+.red-dot {
+  width: 10px;
+  height: 10px;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+  right: 12px;
+  top: 18px;
+}

@@ -1,0 +1,163 @@
+.seller-profile-container {
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ---------- LEFT PANEL ---------- */
+.seller-left {
+  width: 300px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  height: fit-content;
+}
+
+.seller-avatar-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.seller-big-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #eee;
+}
+
+.seller-name {
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.seller-email,
+.seller-joined {
+  color: #555;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.seller-stats {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.stat-box {
+  background: #f7f7f7;
+  padding: 15px 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.stat-box strong {
+  font-size: 20px;
+  display: block;
+}
+
+.contact-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #002f34;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.contact-btn:hover {
+  background: #00474f;
+}
+
+/* ---------- RIGHT PANEL ---------- */
+.seller-right {
+  flex: 1;
+}
+
+.seller-listings-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+/* GRID */
+.listing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.seller-listing-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.seller-listing-card:hover {
+  transform: translateY(-5px);
+}
+
+.seller-listing-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.listing-info {
+  padding: 12px;
+}
+
+.listing-info h4 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.price {
+  color: #1f1f1f;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.view-btn {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  background: #0d00ff;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  border-radius: 15px;
+}
+
+.view-btn:hover {
+  background: #070093;
+}
+
+/* EMPTY STATE */
+.no-listing-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+}
+
+.no-listing-box img {
+  width: 180px;
+  margin-bottom: 15px;
+}

@@ -1,0 +1,332 @@
+.users-root {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* ================= STATS ================= */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  padding: 16px;
+  border-radius: 14px;
+  color: white;
+  text-align: center;
+}
+
+.stat-card span {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.stat-card strong {
+  display: block;
+  font-size: 26px;
+  margin-top: 6px;
+}
+
+.stat-card.purple {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+}
+
+.stat-card.green {
+  background: linear-gradient(135deg, #22c55e, #4ade80);
+}
+
+.stat-card.orange {
+  background: linear-gradient(135deg, #f59e0b, #fbbf24);
+}
+
+.stat-card.blue {
+  background: linear-gradient(135deg, #06b6d4, #3b82f6);
+}
+
+/* ================= SEARCH ================= */
+
+.users-top {
+  margin-bottom: 12px;
+}
+
+.users-top input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* ================= FILTER PILLS ================= */
+
+.filter-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.filter-bar button {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  background: #f3f4f6;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.filter-bar button.active {
+  background: #6366f1;
+  color: white;
+  border-color: #6366f1;
+}
+
+/* ================= TABLE ================= */
+
+.users-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.users-table th,
+.users-table td {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.user-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+/* ROLE BADGES */
+.role {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.role.user {
+  background: #d1f4c8;
+  color: #155724;
+}
+
+.role.seller {
+  background: #ffd9a3;
+  color: #b8860b;
+}
+
+.role.admin {
+  background: #a8d4f7;
+  color: #003d99;
+}
+
+/* ACTION ICONS */
+
+.action-icons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.edit-icon {
+  color: #2563eb;
+  cursor: pointer;
+}
+
+.delete-icon {
+  color: #dc2626;
+  cursor: pointer;
+}
+
+/* ================= PAGINATION ================= */
+
+.pagination {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+/* ================= EDIT MODAL ================= */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-box {
+  background: white;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 520px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  border-bottom: 2px solid #f0f0f0;
+  background: linear-gradient(135deg, #f9f9fb, #ffffff);
+}
+
+.modal-header h4 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #222;
+  letter-spacing: -0.3px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #bbb;
+  cursor: pointer;
+  padding: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.close-btn:hover {
+  background: #f0f0f0;
+  color: #666;
+}
+
+.modal-body {
+  padding: 24px;
+  background: white;
+  max-height: calc(70vh - 140px);
+  overflow-y: auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #222;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.form-group input::placeholder {
+  color: #999;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+  background: #f9f9ff;
+}
+
+.modal-footer {
+  display: flex;
+  gap: 12px;
+  padding: 20px 24px;
+  border-top: 2px solid #f0f0f0;
+  background: linear-gradient(135deg, #ffffff, #f9f9fb);
+  justify-content: flex-end;
+}
+
+.btn-cancel,
+.btn-save {
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-cancel {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.btn-cancel:hover {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.btn-save {
+  background: #6366f1;
+  color: white;
+  min-width: 120px;
+}
+
+.btn-save:hover:not(:disabled) {
+  background: #4f46e5;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+}
+
+.btn-save:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

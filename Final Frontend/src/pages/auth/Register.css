@@ -1,0 +1,75 @@
+/* Full screen center */
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Card */
+.login-card {
+  width: 380px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* Inputs */
+.login-input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #002f34;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Text */
+.login-note {
+  font-size: 13px;
+  color: #666;
+  margin-top: 15px;
+}
+
+.resend {
+  color: #0a58ca;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* ICON SELECTION */
+.icon-section {
+  margin-bottom: 15px;
+}
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.icon-img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.icon-img.active {
+  border: 2px solid #002f34;
+}

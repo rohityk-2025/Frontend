@@ -1,0 +1,26 @@
+.home-wrapper {
+  padding: 25px 40px;
+  background: #f2f3f5;
+  min-height: 100vh;
+}
+
+.home-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #002f34;
+  margin-bottom: 20px;
+}
+
+.list-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+/* CRITICAL FIX */
+.listing-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  cursor: pointer;
+}

@@ -1,0 +1,174 @@
+.sell-form-wrapper {
+  max-width: 750px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+/* TOP BAR */
+.category-bar h2 {
+  margin-bottom: 10px;
+  color: #002f34;
+}
+
+.selected-category {
+  background: #f2f4f5;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 25px;
+}
+
+.cat-path {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.change-btn {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: #0066ff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* HEADINGS */
+.sell-form-wrapper h3 {
+  margin: 25px 0 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #002f34;
+}
+
+/* FORM */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* PRICE */
+.price-group {
+  display: flex;
+}
+
+.price-group span {
+  padding: 10px 14px;
+  background: #eee;
+  border: 1px solid #ccc;
+  border-right: none;
+}
+
+.price-group input {
+  flex: 1;
+  border-left: none;
+}
+
+/* PHOTO GRID */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.photo-slot {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: 1.5px dashed #bfcfd0;
+  border-radius: 4px;
+  background: #fafafa;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-photo {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plus {
+  font-size: 32px;
+  color: #002f34;
+  font-weight: 600;
+}
+
+.photo-slot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.remove-btn {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* PHONE */
+.phone-group {
+  display: flex;
+}
+
+.phone-group span {
+  padding: 10px 14px;
+  background: #eee;
+  border: 1px solid #ccc;
+  border-right: none;
+}
+
+.phone-group input {
+  flex: 1;
+  border-left: none;
+}
+
+.verify-text {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* SUBMIT */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #002f34;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 30px;
+  cursor: pointer;
+}

@@ -1,0 +1,10 @@
+/**
+ * App.css
+ * Styles for App.jsx only
+ * Keep this file very light
+ */
+
+.app-wrapper {
+  min-height: 100vh;
+  background-color: #ffffff;
+}

@@ -1,0 +1,285 @@
+/* ==========================
+   Navbar.css (REFINED, LESS CONGESTED, PREMIUM)
+   ========================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap");
+
+.main-header {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 22px;
+  align-items: center;
+  background: #e3e3e3;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.left-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.msg {
+  width: 20px;
+  height: 20px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.logo-img {
+  width: 34px;
+}
+
+.logo-text {
+  font-size: 20px; /* reduced size */
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: #7a3cff; /* purple brand */
+}
+
+/* SEARCH BOXES – SAME SIZE */
+.search-box {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 999px;
+  padding: 4px 10px;
+  gap: 8px;
+  width: 220px; /* both same */
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 13px;
+  font-family: "Inter", sans-serif;
+}
+
+.search-btn {
+  width: 50px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.right-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon-circle {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #ff3b30;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  border: 2px solid white;
+}
+
+.profile-nav {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.welcome-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #7a3cff;
+  animation: welcomeFade 5s ease forwards;
+}
+
+@keyframes welcomeFade {
+  0% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.user-name {
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+}
+
+/* LOGOUT ICON */
+.logout-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.logout-icon:hover {
+  background: #ffecec;
+  color: red;
+}
+
+/* SELL BUTTON – PURPLE GLITTER ONLY HERE */
+.sell-border {
+  padding: 4px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #7a3cff, #b18cff, #7a3cff);
+  display: inline-block;
+  cursor: pointer;
+}
+
+.sell-btn {
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #7a3cff;
+  background: #ffffff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+  overflow: hidden;
+}
+
+.sell-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(223, 222, 224, 0.4),
+    transparent
+  );
+  animation: sellShine 2.5s infinite;
+}
+
+@keyframes sellShine {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.sell-btn:hover {
+  box-shadow: 0 4px 12px rgba(122, 60, 255, 0.4);
+}
+
+.sell-icon {
+  font-size: 14px;
+}
+
+/* FILTER BAR */
+.filter-bar {
+  background: white;
+  padding: 8px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.filter-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.filter-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-pill {
+  padding: 4px 12px; /* smaller pills */
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+.filter-pill:hover {
+  border-color: #7a3cff;
+  color: #7a3cff;
+}
+
+.price-filter {
+  position: relative;
+}
+
+.price-box {
+  display: none;
+  position: absolute;
+  top: 34px;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  gap: 6px;
+}
+
+.price-filter:hover .price-box {
+  display: flex;
+}
+
+.category-date {
+  color: gray;
+  font-size: 13px;
+  font-family: "Inter", sans-serif;
+}

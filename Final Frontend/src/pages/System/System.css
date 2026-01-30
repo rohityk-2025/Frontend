@@ -1,0 +1,65 @@
+.system-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f7f8f9;
+}
+
+.system-box {
+  background: white;
+  padding: 40px 50px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.system-box h1 {
+  font-size: 72px;
+  margin-bottom: 10px;
+  color: #002f34; /* OLX theme color */
+}
+
+.system-box h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.system-box p {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.system-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.system-btn {
+  padding: 10px 20px;
+  border: none;
+  background: #002f34;
+  color: white;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.system-btn:hover {
+  background: #004f55;
+}
+
+.system-btn.outline {
+  background: transparent;
+  color: #002f34;
+  border: 1px solid #002f34;
+}
+
+.system-btn.outline:hover {
+  background: #002f34;
+  color: white;
+}

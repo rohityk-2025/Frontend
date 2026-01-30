@@ -1,0 +1,231 @@
+.profile-container {
+  display: flex;
+  gap: 30px;
+  padding: 30px 40px;
+  background: #f7f8f9;
+}
+
+/* LEFT PANEL */
+.profile-left {
+  width: 280px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px 20px;
+  border: 1px solid #eee;
+  text-align: center;
+}
+
+.profile-avatar-wrapper {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  border: 4px solid #e0e0e0;
+  overflow: hidden;
+}
+
+.profile-big-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.profile-email,
+.profile-joined {
+  color: #666;
+  font-size: 14px;
+  margin: 6px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.profile-stats {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.profile-stats strong {
+  display: block;
+  font-size: 18px;
+}
+
+/* PURPLE EDIT PROFILE BUTTON */
+.edit-profile-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #4719ff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.edit-profile-btn:hover {
+  background: #5a3ee6;
+}
+
+/* RIGHT PANEL */
+.profile-right {
+  flex: 1;
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  border: 1px solid #eee;
+}
+
+.my-listings-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.listing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* LISTING CARD */
+.profile-listing-card {
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+  background: white;
+}
+
+.profile-listing-card:hover {
+  border-color: #ccc;
+}
+
+/* IMAGE AREA */
+.listing-img-wrapper {
+  padding: 8px; /* GAP BETWEEN IMAGE AND CARD */
+  background: #fafafa;
+}
+
+.profile-listing-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain; /* SHOW FULL IMAGE */
+  background: #f5f5f5;
+  border-radius: 6px;
+}
+
+/* INFO */
+.listing-info {
+  padding: 12px;
+}
+
+.listing-info h4 {
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: #5e5e5e;
+}
+
+.price {
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* ACTION BUTTONS */
+.listing-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* VIEW BUTTON – BLACK & SMALL */
+.view-btn1 {
+  width: 170px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background: hsl(249, 100%, 51%);
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+  display: flex;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.view-btn:hover {
+  background: #7c2bff;
+}
+
+/* EDIT ICON BUTTON */
+.edit-btn1 {
+  padding: 6px 8px;
+  border: none;
+  border-radius: 5px;
+  background: #ffffff;
+  color: #333;
+  cursor: pointer;
+}
+
+.edit-btn1:hover {
+  background: #e5e5e5;
+}
+
+/* DELETE ICON BUTTON */
+.delete-btn1 {
+  padding: 6px 8px;
+  border: none;
+  border-radius: 5px;
+  background: #ffffff;
+  color: #c40000;
+  cursor: pointer;
+}
+
+.delete-btn1:hover {
+  background: #e9e0e0;
+}
+
+/* EMPTY STATE */
+.no-listing-box {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.no-listing-img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.sell-now-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #008b8b;
+  color: white;
+  cursor: pointer;
+}
+
+.sell-now-btn:hover {
+  background: #006666;
+}

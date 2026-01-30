@@ -1,0 +1,133 @@
+/**
+ * Messages.css
+ * Styling for chat page and components
+ */
+
+.messages-page {
+  height: 100vh;
+  background: #f2f4f5;
+}
+
+.chat-list {
+  background: #fff;
+  border-right: 1px solid #ddd;
+  padding: 0;
+}
+
+.chat-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.chat-item.active {
+  background: #eaf4ff;
+}
+
+.chat-item img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.chat-info {
+  flex: 1;
+}
+
+.chat-name {
+  font-weight: 600;
+}
+
+.chat-last {
+  font-size: 13px;
+  color: #666;
+}
+
+.unread-badge {
+  background: #0d6efd;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+/* Right Chat Area */
+.chat-window {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+.chat-header {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.chat-header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+/* Message Bubbles */
+.message {
+  max-width: 60%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.message.sent {
+  margin-left: auto;
+  background: #d1ecff;
+}
+
+.message.received {
+  background: #f1f1f1;
+}
+
+.message span {
+  font-size: 11px;
+  color: #555;
+  display: block;
+  text-align: right;
+}
+
+/* Input Area */
+.chat-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.chat-input button {
+  background: #0d6efd;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+}
