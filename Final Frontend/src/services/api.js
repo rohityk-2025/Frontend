@@ -1,10 +1,10 @@
 // Axios instance with Authorization header taken from localStorage
 
-
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:8080/api",
+  baseURL: "https://frontend-nkg1.onrender.com/api",
+  // baseURL: "http://localhost:8080/api",
 });
 
 api.interceptors.request.use((config) => {
