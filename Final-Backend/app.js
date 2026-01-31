@@ -10,7 +10,12 @@ const app = express();
 // Allow React frontend
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://recirclemart.netlify.app"],
+    origin: [
+      "http://localhost:5173",
+      "https://recirclemart.netlify.app",
+      "https://recircle-mart.netlify.app",
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   }),
 );
