@@ -14,6 +14,7 @@ app.use(
       "http://localhost:5173",
       "https://recirclemart.netlify.app",
       "https://recircle-mart.netlify.app",
+      "https://frontend-1-1ex9.onrender.com",
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
